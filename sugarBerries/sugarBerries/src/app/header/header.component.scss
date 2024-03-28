@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Parisienne&display=swap');
+
+.header {
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px #E2BFB3 solid;
+}
+
+.header-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    div {
+        color: #5c463a;
+        margin-left: 15px;
+        font-size: 20px;
+        border-bottom: 1px transparent solid;
+        transition: all 0.13s ease-in-out;
+        :hover {
+            color: #cfaf9b;
+            cursor: pointer;
+            border-bottom: 1px #cfaf9b solid;
+        }
+    }
+}
+
+.sections-vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-img {
+    display: flex;
+    justify-content: flex-start;
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    i {
+        color: #5c463a;
+        margin: 20px;
+        font-size: 25px;
+        transition: 0.2s;
+
+    }
+    i:hover {
+        cursor: pointer;
+        color: #cfaf9b;
+    }
+}
