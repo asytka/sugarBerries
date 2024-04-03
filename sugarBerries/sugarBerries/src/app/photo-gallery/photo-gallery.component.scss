@@ -1,0 +1,18 @@
+.photo-gallery-wrapper {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-color: #d4c6bd;
+    padding: 16px;
+}
+
+.photo-gallery-container {
+    display: flex;
+    height: 440px;
+    justify-content: space-between;
+}
+
+gallery {
+    width: 30%;
+    border-radius: 15px;
+}

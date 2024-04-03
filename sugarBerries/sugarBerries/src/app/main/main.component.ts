@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
-
+  logoBig: string = 'assets/images/logos/Boho_Abstract_Handwritten_Brand_Logo_Допис_в_Instagram_20240328.png';
 }

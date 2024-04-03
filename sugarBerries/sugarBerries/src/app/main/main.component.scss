@@ -1,0 +1,26 @@
+.main-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #573f31;
+    h4 {
+        line-height: 25px;
+    }
+}
+.main-container-text-button {
+    background-color: #ffdecc;
+    color: #573f31;
+    border: 1px #573f31 solid;
+    font-size: 15px;
+    width: 200px;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+        transform: scale(105%);
+    }
+}
