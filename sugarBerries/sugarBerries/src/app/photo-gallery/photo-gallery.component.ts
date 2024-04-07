@@ -13,9 +13,13 @@ export class PhotoGalleryComponent implements OnInit{
 
   ngOnInit() {
     this.images = [
-      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-03-28_18-35-22.jpg', thumb: 'assets/images/photo-gallery/photo_2024-03-28_18-35-22.jpg' }),
-      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-03-28_18-35-26.jpg', thumb: 'assets/images/photo-gallery/photo_2024-03-28_18-35-26.jpg' }),
-      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-03-28_18-36-52.jpg', thumb: 'assets/images/photo-gallery/photo_2024-03-28_18-36-52.jpg' }),
+      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-04-07_11-47-08.jpg', thumb: 'assets/images/photo-gallery/photo_2024-04-07_11-47-08.jpg' }),
+      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-04-07_11-47-12.jpg', thumb: 'assets/images/photo-gallery/photo_2024-04-07_11-47-12.jpg' }),
+      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-04-07_11-47-17.jpg', thumb: 'assets/images/photo-gallery/photo_2024-04-07_11-47-17.jpg' }),
+      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-04-07_11-47-19.jpg', thumb: 'assets/images/photo-gallery/photo_2024-04-07_11-47-19.jpg' }),
+      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-04-07_11-47-21.jpg', thumb: 'assets/images/photo-gallery/photo_2024-04-07_11-47-21.jpg' }),
+      new ImageItem({ src: 'assets/images/photo-gallery/photo_2024-04-07_11-47-23.jpg', thumb: 'assets/images/photo-gallery/photo_2024-04-07_11-47-23.jpg' }),
+
     ];
   }
 }

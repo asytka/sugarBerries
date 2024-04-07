@@ -1,0 +1,21 @@
+.equipment-wrapepr {
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.grid-item { 
+    & img {
+    height: 250px;
+    width: 200px;
+    }
+}

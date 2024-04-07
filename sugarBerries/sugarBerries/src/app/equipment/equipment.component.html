@@ -1,0 +1,19 @@
+<div class="equipment-wrapepr">
+    <div class="container">
+        <div class="title">Наше обладнання</div>
+        <div class="row">
+            <div class="grid-item" *ngFor="let item of images; let i = index" [lightbox]="i" [gallery]="galleryId">
+                <img [src]="item.data.thumb"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<div class="grid">
+    <img src="assets/images/equipment/photo_2024-04-07_12-50-28 (2).jpg" alt="">
+    <img src="assets/images/equipment/photo_2024-04-07_12-50-28 (3).jpg" alt="">
+    <img src="assets/images/equipment/photo_2024-04-07_12-50-28.jpg" alt="">
+    <img src="assets/images/equipment/photo_2024-04-07_18-17-19.jpg" alt="">
+</div>-->

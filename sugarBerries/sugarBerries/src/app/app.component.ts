@@ -5,10 +5,11 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { ServicesComponent } from './services/services.component';
+import { EquipmentComponent } from './equipment/equipment.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, HeaderComponent, MainComponent, PhotoGalleryComponent, ServicesComponent],
+  imports: [RouterOutlet, FormsModule, HeaderComponent, MainComponent, PhotoGalleryComponent, ServicesComponent, EquipmentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
