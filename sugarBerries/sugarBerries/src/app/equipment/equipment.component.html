@@ -1,9 +1,22 @@
-<div class="equipment-wrapepr">
+<div class="equipment-wrapper">
     <div class="container">
         <div class="title">Наше обладнання</div>
         <div class="row">
-            <div class="grid-item" *ngFor="let item of images; let i = index" [lightbox]="i" [gallery]="galleryId">
-                <img [src]="item.data.thumb"/>
+            <div class="col-md-6" *ngFor="let item of images; let i = index">
+                <div class="grid-item">
+                    <img [src]="item.data.thumb" class="img-fluid" alt="Image">
+                    <div class="grid-item-text">
+                        <div class="grid-item-text-title">
+                            <h2>Lorem ipsum </h2>
+                        </div>
+                        <div class="grid-item-text-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            doloremque, ducimus pariatur
+                            consequuntur deleniti nihil excepturi odit. Odit odio et numquam. Nostrum fuga ratione
+                            voluptas tempora consequuntur debitis possimus cum!
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

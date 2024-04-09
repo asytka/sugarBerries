@@ -1,4 +1,4 @@
-.equipment-wrapepr {
+.equipment-wrapper {
     margin-top: 50px;
 }
 
@@ -7,15 +7,48 @@
     font-style: italic;
     margin-bottom: 10px;
 }
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+
+
 .grid-item { 
+    margin-bottom: 25px;
+    background-color: #d4c6bd;
+    border: 1px #b39785 solid;
+    border-radius: 15px 15px 15px 15px;
+    overflow: hidden;
+    display: flex;
+    height: auto;
+    max-height: 250px;
+    &-text {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 16px;
+        &-desc {
+            height: 250px;
+            width: auto;
+        }
+        & h2 {
+            margin: 0;
+        }
+    }
+    & div {
+        display: inline-block;
+    }
     & img {
-    height: 250px;
-    width: 200px;
+        display: block;
+        max-height: 250px;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-item {
+        height: 150px;
+        &-image-wrapper {
+            flex-direction: row;
+        }
     }
 }
