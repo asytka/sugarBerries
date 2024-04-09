@@ -7,7 +7,7 @@
     justify-content: space-between;
     width: auto;
     background-color: white;
-    border-bottom: 1px #E2BFB3 solid;
+    box-shadow: 0 -10px 25px black;
     z-index: 2;
 }
 
@@ -15,6 +15,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &-draggable {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
     div {
         color: #5c463a;
         margin-left: 15px;
@@ -26,6 +36,12 @@
             cursor: pointer;
             border-bottom: 1px #cfaf9b solid;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        justify-content: space-around;
     }
 }
 
@@ -57,4 +73,28 @@
         cursor: pointer;
         color: #cfaf9b;
     }
+}
+
+.sections-dropdown {
+    top: -200px;
+    position: absolute;
+    background-color: white;
+    z-index: -2;
+    width: 100vw;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.sections-dropdown-menu{
+    color: #5c463a;
+    font-size: 36px;
+    i {
+        height: 36px;
+    }
+    margin: 0;
+}
+
+.sections-dropdown-text {
+    padding: 5px;
+    font-size: 16px;
 }

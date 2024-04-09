@@ -1,37 +1,71 @@
+
 <div class="header">
     <div class="logo-img">
         <div class="sections-vertical-align">
             <img [src]="logoSmall" alt="#" height="75px">
         </div>
     </div>
-    <div class="sections">
-        <div class="sections-vertical-align">
-            <div class="main">Про нас</div>
+    <div class="sections-draggable" *ngIf="isMobileScreen(); else desktopContent">
+        <div class="sections" #sectionsWrapper>
+            <div class="sections-vertical-align">
+                <div class="main">Про нас</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="services">Послуги</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="equipment">Обладнання</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="masters">Майстри</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="masters">Переваги</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="location">Сертифікати</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="masters">Ціни</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="location">Контакти</div>
+            </div>    
         </div>
-        <div class="sections-vertical-align">
-            <div class="services">Послуги</div>
-        </div>
-        <div class="sections-vertical-align">
-            <div class="equipment">Обладнання</div>
-        </div>
-        <div class="sections-vertical-align">
-            <div class="masters">Майстри</div>
-        </div>
-        <div class="sections-vertical-align">
-            <div class="masters">Переваги</div>
-        </div>
-        <div class="sections-vertical-align">
-            <div class="location">Сертифікати</div>
-        </div>
-        <div class="sections-vertical-align">
-            <div class="masters">Ціни</div>
-        </div>
-        <div class="sections-vertical-align">
-            <div class="location">Контакти</div>
-        </div>    
     </div>
-    <div class="socials">
+    <div class="socials" *ngIf="isMobileScreen(); ">
         <div class="sections-vertical-align"><i class="bi bi-instagram"></i></div>
         <div class="sections-vertical-align"><i class="bi bi-tiktok"></i></div>
     </div>
 </div>
+    <ng-template #desktopContent>
+        <div class="sections-vertical-align sections-dropdown-menu">
+            <i class="bi bi-list" (click)="dropdownmenuopen()"></i>
+        </div>
+        <div class="sections-dropdown" #sectionsDropdown>
+            <div class="sections-vertical-align">
+                <div class="main sections-dropdown-text">Про нас</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="services sections-dropdown-text">Послуги</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="equipment sections-dropdown-text">Обладнання</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="masters sections-dropdown-text">Майстри</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="masters sections-dropdown-text">Переваги</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="location sections-dropdown-text">Сертифікати</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="masters sections-dropdown-text">Ціни</div>
+            </div>
+            <div class="sections-vertical-align">
+                <div class="location sections-dropdown-text">Контакти</div>
+            </div>    
+        </div>
+    </ng-template>
