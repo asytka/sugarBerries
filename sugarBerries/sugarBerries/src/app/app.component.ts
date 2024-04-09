@@ -8,12 +8,12 @@ import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { ServicesComponent } from './services/services.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { provideAnimations } from '@angular/platform-browser/animations';
-
+import { MastersComponent } from './masters/masters.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, HeaderComponent, MainComponent, PhotoGalleryComponent, ServicesComponent, EquipmentComponent],
+  imports: [RouterOutlet, FormsModule, HeaderComponent, MainComponent, PhotoGalleryComponent, ServicesComponent, EquipmentComponent, MastersComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

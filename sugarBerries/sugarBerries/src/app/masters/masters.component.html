@@ -1,0 +1,30 @@
+<div class="masters-container">
+    <div class="container">
+        <div class="row">
+            <div class="masters-wrapper">
+                <div class="all-masters-wrapper">
+                    <div class="all-masters">
+                        <div class="all-masters-title">
+                            Наш колектив
+                            <div class="all-masters-title-desc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus asperiores magnam
+                                corrupti.
+                            </div>
+                        </div>
+                        <div class="all-masters-photo">
+                            <img src="{{allmasters}}" alt="photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="every-master">
+                    <div *ngFor="let image of images;">
+                        <img [src]="image[0]" alt="photo">
+                        <div class="every-master-desc">
+                            {{image[1]}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
