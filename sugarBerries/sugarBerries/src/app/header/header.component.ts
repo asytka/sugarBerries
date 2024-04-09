@@ -19,10 +19,9 @@ export class HeaderComponent implements AfterViewInit{
   
   dropdownmenuopen() {
     const dropdownElement = this.sectionsDropdown.nativeElement;
-    const currentPosition = parseInt(dropdownElement.style.top || '-200', 10);
-    const newPosition = currentPosition === -200 ? 75 : -200;
+    const currentPosition = parseInt(dropdownElement.style.top || '-250', 10);
+    const newPosition = currentPosition === -250 ? 75 : -250;
     dropdownElement.style.top = `${newPosition}px`;
-    console.log("hui")
   }
   mouseDown = false;
   startX!: number;
