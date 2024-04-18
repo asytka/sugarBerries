@@ -11,14 +11,13 @@
                                 corrupti.
                             </div>
                         </div>
-                        <div class="all-masters-photo">
-                            <img src="{{allmasters}}" alt="photo">
-                        </div>
                     </div>
                 </div>
                 <div class="every-master">
                     <div *ngFor="let image of images;">
-                        <img [src]="image[0]" alt="photo">
+                        <div class="every-master-image-wrapper">                         
+                            <img [src]="image[0]" alt="photo" class="every-master-image">
+                        </div>
                         <div class="every-master-desc">
                             {{image[1]}}
                         </div>
