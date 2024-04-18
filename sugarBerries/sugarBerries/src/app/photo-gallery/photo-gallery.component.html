@@ -1,9 +1,11 @@
 <div class="photo-gallery-wrapper">
-    <div class="photo-gallery-container container">
-        <div class="gallery-wrapper">
-            <gallery [items]="images" [counter]="false" [thumb]="false" [dots]="true"></gallery>
+    <div class="container">
+        <div class="photo-gallery-container">
+            <div class="gallery-wrapper">
+                <gallery [items]="images" [counter]="false" [thumb]="false" [dots]="true"></gallery>
+            </div>
+            <app-services></app-services>     
         </div>
-        <app-services></app-services>     
     </div>
 </div>
 

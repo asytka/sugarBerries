@@ -9,11 +9,21 @@ import { ServicesComponent } from './services/services.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { MastersComponent } from './masters/masters.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, HeaderComponent, MainComponent, PhotoGalleryComponent, ServicesComponent, EquipmentComponent, MastersComponent],
+  imports: [RouterOutlet,
+            FormsModule,
+            HeaderComponent,
+            MainComponent,
+            PhotoGalleryComponent,
+            ServicesComponent,
+            EquipmentComponent,
+            MastersComponent,
+            AdvantagesComponent,
+            ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
