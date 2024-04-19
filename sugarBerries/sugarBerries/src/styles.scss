@@ -1,5 +1,5 @@
 app-root {
-    background-color: #FEECE2;
+    //background-color: #FEECE2;
     display: block;
 }
 
@@ -11,5 +11,7 @@ body {
     font-family: "El Messiri", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    overflow-x: clip;
+    background-image: linear-gradient(to right bottom, #FEECE2, #ffd8c5, #FEECE2);
+
 }
+

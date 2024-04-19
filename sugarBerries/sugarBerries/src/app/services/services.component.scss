@@ -42,29 +42,29 @@
 }
 
   
-  .animate-in {
+.animate-in {
     animation: MovefadeIn 1s ease-in-out forwards;
-  }
-  
-  .animate-out {
+}
+
+.animate-out {
     animation: fadeOut 1s ease-out forwards;
-  }
-  
-  @keyframes MovefadeIn {
-    0% {
-      opacity: 0;
-      transform: translateX(550px);
+}
+
+@keyframes MovefadeIn {
+0% {
+    opacity: 0;
+    transform: translateX(550px);
+}
+100% {
+    opacity: 1;
     }
-    100% {
-      opacity: 1;
+}
+
+@keyframes fadeOut {
+0% {
+    opacity: 0;
     }
-  }
-  
-  @keyframes fadeOut {
-    0% {
-      opacity: 0;
+100% {
+    opacity: 1;
     }
-    100% {
-      opacity: 1;
-    }
-  }
+}
