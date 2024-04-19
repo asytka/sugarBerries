@@ -14,7 +14,7 @@
 }
 
 .product-image {
-    width: 50%;
+    width: 70%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
 }
 
@@ -30,4 +30,10 @@
 .sertificates {
     display: flex;
     justify-content: center;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev svg,
+:host ::ng-deep .p-carousel .p-carousel-next svg {
+    width: 20px;
+    height: 20px;
 }

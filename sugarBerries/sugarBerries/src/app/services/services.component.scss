@@ -40,3 +40,31 @@
         text-align: center;
     }
 }
+
+  
+  .animate-in {
+    animation: MovefadeIn 1s ease-in-out forwards;
+  }
+  
+  .animate-out {
+    animation: fadeOut 1s ease-out forwards;
+  }
+  
+  @keyframes MovefadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(550px);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import {ButtonModule} from 'primeng/button'
 import { TagModule } from 'primeng/tag';
+
 @Component({
   selector: 'app-sertificates',
   standalone: true,
