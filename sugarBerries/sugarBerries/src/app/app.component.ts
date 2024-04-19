@@ -10,6 +10,8 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { MastersComponent } from './masters/masters.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { SertificatesComponent } from './sertificates/sertificates.component';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +25,8 @@ import { AdvantagesComponent } from './advantages/advantages.component';
             EquipmentComponent,
             MastersComponent,
             AdvantagesComponent,
+            SertificatesComponent,
+            CarouselModule,
             ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

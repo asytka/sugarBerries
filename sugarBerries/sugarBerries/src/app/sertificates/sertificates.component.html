@@ -1,0 +1,28 @@
+<div class="sertificates-container">
+    <div class="container">
+        <div class="sertificates-tittle">Наші сертифікати</div>
+        <div class="sertificates-wrapper">
+            <div class="sertificates">
+                <div class="card">
+                    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions" [circular]="true">
+                        <ng-template let-product pTemplate="item">
+                            <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                                <div class="mb-3">
+                                    <img src="{{ product.image }}" [alt]="product.name" class="product-image w-6 shadow-2 " />
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">{{ product.name }}</h4>
+                                    <div class="mt-5 flex align-items-center justify-content-center gap-2">
+                                </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+            </div> 
+        </div>    
+    </div>
+</div>
+
+
+

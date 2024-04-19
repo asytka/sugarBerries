@@ -1,0 +1,33 @@
+.sertificates-container {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #d4c6bd;
+    padding: 16px;
+}
+
+.product-item-content {
+    border: 1px solid var(--surface-d);
+    border-radius: 3px;
+    margin: .3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.product-image {
+    width: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+}
+
+.sertificates-tittle {
+    padding: 16px;
+    font-size: 40px;
+    font-style: italic;
+}
+.sertificates-wrapper {
+    padding: 16px;
+}
+
+.sertificates {
+    display: flex;
+    justify-content: center;
+}
