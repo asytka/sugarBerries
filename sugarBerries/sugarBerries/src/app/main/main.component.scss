@@ -54,26 +54,26 @@
     background: rgba(255, 255, 255, 0.25);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
-    width: 200%;
-    height: 45em;
+    width: 350%;
+    height: 50em;
     animation: wave 10s -3s ease-in-out infinite;
     transform: translate3d(0, 0, 0);
-    opacity: 0.8;
+    opacity: 1;
     bottom: 0;
     left: 0;
     z-index: -1;
 }
 
 .wave:nth-of-type(2) {
-    bottom: -16.25em;
-    animation: wave 18s ease-in-out reverse infinite;
-    opacity: 0.8;
+    bottom: -17em;
+    animation: wave 15s ease-in-out reverse infinite;
+    opacity: 0.9;
 }
 
 .wave:nth-of-type(3) {
-    bottom: -32.5em;
+    bottom: -34em;
     animation: wave 20s -1s ease-in-out reverse infinite;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 @keyframes wave {
