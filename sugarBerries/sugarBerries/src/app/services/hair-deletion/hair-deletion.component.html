@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="title"><h2>Прайс ліст</h2></div>
+        <div class="image-wrapper">
+            <div class="image-item" *ngFor="let item of imagesPriceList; let i = index">
+                <!-- <img [src]="item.image" class="image"> -->
+                <p-image [src]="item.image" class="image" alt="Image" [preview]="true"
+                        [imageStyle]="{ height: 'auto', width: '100%', zIndex: 2}">
+                </p-image>
+            </div>
+        </div>
+    </div>
+</div>

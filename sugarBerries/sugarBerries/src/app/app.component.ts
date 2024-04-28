@@ -1,32 +1,19 @@
 import { Component, HostListener  } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive} from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { MainPageComponent } from './main-page/main-page.component';
 import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
-import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
-import { ServicesComponent } from './services/services.component';
-import { EquipmentComponent } from './equipment/equipment.component';
-import { provideAnimations } from '@angular/platform-browser/animations';
-import { MastersComponent } from './masters/masters.component';
-import { AdvantagesComponent } from './advantages/advantages.component';
-import { SertificatesComponent } from './sertificates/sertificates.component';
-import { CarouselModule } from 'primeng/carousel';
-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,
+  imports: [
+            RouterOutlet,
+            RouterLink, 
+            RouterLinkActive,
             FormsModule,
-            HeaderComponent,
-            MainComponent,
-            PhotoGalleryComponent,
-            ServicesComponent,
-            EquipmentComponent,
-            MastersComponent,
-            AdvantagesComponent,
-            SertificatesComponent,
-            CarouselModule,
+            MainPageComponent,
+            HeaderComponent
             ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

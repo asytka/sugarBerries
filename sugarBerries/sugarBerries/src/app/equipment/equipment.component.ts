@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { Gallery, GalleryItem, ImageItem } from 'ng-gallery';
 import { LightboxModule, Lightbox} from 'ng-gallery/lightbox';
+import { ImageModule } from 'primeng/image';
 
 
 @Component({
   selector: 'app-equipment',
   standalone: true,
-  imports: [LightboxModule, NgFor ],
+  imports: [LightboxModule, NgFor, ImageModule],
   templateUrl: './equipment.component.html',
   styleUrl: './equipment.component.scss'
 })

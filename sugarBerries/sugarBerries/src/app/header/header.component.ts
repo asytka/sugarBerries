@@ -1,6 +1,9 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
+
 import { Component, ElementRef, ViewChild, AfterViewInit, NgModule } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
+import { waitForAsync } from '@angular/core/testing';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -10,9 +13,6 @@ import { MediaMatcher } from '@angular/cdk/layout';
 })
 export class HeaderComponent implements AfterViewInit{
   logoSmall: string = 'assets/images/logos/Boho Abstract Handwritten Brand Logo_20240327_141638_0000.png';
-
-
-
 
   @ViewChild('sectionsWrapper') sectionsWrapper!: ElementRef<HTMLElement>;
   @ViewChild('sectionsDropdown') sectionsDropdown!: ElementRef<HTMLElement>;
@@ -27,16 +27,21 @@ export class HeaderComponent implements AfterViewInit{
   startX!: number;
   scrollLeft!: number;
 
-  constructor(private mediaMatcher: MediaMatcher) { }
+  constructor(private mediaMatcher: MediaMatcher, private viewportScroller: ViewportScroller, private router: Router) { }
+
+  async scrollToElement(elementId: string): Promise<void> {
+      this.viewportScroller.setOffset([0, 75]);      
+      return this.viewportScroller.scrollToAnchor(elementId);
+  }
 
   isMobileScreen(): boolean {
     return this.mediaMatcher.matchMedia('(min-width: 768px)').matches;
   }
+  
   ngAfterViewInit(): void {
     if (this.sectionsWrapper) {
       const slider = this.sectionsWrapper.nativeElement;
       this.initializeSlider(slider);
-      console.log("ok");
     }
   }
 

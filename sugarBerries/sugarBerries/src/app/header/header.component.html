@@ -2,40 +2,40 @@
     <div class="overhide">
         <div class="logo-img">
             <div class="sections-vertical-align">
-                <img [src]="logoSmall" alt="#" height="75px">
+                <a href=""><img [src]="logoSmall" alt="#" height="75px"></a>
             </div>
         </div>
         <div class="sections-draggable" *ngIf="isMobileScreen(); else desktopContent">
             <div class="sections" #sectionsWrapper>
                 <div class="sections-vertical-align">
-                    <div class="main">Про нас</div>
+                    <div class="main" (click)="scrollToElement('app-main')">Про нас</div>
                 </div>
                 <div class="sections-vertical-align">
-                    <div class="services">Послуги та ціни</div>
+                    <div class="services" (click)="scrollToElement('app-photo-gallery')">Послуги та ціни</div>
                 </div>
                 <div class="sections-vertical-align">
-                    <div class="equipment">Обладнання</div>
+                    <div class="equipment" (click)="scrollToElement('app-equipment')">Обладнання</div>
                 </div>
                 <div class="sections-vertical-align">
-                    <div class="masters">Майстри</div>
+                    <div class="masters" (click)="scrollToElement('app-masters')">Майстри</div>
                 </div>
                 <div class="sections-vertical-align">
-                    <div class="masters">Переваги</div>
+                    <div class="advantages" (click)="scrollToElement('app-advantages')">Переваги</div>
                 </div>
                 <div class="sections-vertical-align">
-                    <div class="location">Сертифікати</div>
+                    <div class="sertificates" (click)="scrollToElement('app-sertificates')">Сертифікати</div>
                 </div>
                 <div class="sections-vertical-align">
-                    <div class="masters">Відгуки</div>
+                    <div class="ratings" (click)="scrollToElement('app-ratings')">Відгуки</div>
                 </div>
                 <div class="sections-vertical-align">
-                    <div class="location">Контакти</div>
+                    <div class="contacts" (click)="scrollToElement('app-location')">Контакти</div>
                 </div>
             </div>
         </div>
         <div class="socials" *ngIf="isMobileScreen(); ">
-            <div class="sections-vertical-align"><i class="bi bi-instagram"></i></div>
-            <div class="sections-vertical-align"><i class="bi bi-tiktok"></i></div>
+            <div class="sections-vertical-align"><a href="https://www.instagram.com/sugar_berries/?hl=uk"><i class="bi bi-instagram"></i></a></div>
+            <div class="sections-vertical-align"><a href="https://www.tiktok.com/@sugar_berries"><i class="bi bi-tiktok"></i></a></div>
         </div>
     </div>
 </div>
